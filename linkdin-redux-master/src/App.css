@@ -1,0 +1,466 @@
+body {
+	background-color: #f4f2ee;
+}
+
+.btn-outline-secondary {
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+	background-color: #ebebeb;
+	color: white;
+	color: grey;
+	box-shadow: inset 0 0 0 2px;
+}
+
+.btn-outline-primary:hover:not(.pencil) {
+	background-color: #e2f0fe;
+	color: #0a66c2;
+	box-shadow: inset 0 0 0 2px;
+}
+
+.btn-primary.btn:hover {
+	background-color: #004182;
+}
+.undecorated {
+	text-decoration: none;
+	color: gray;
+}
+
+.undecorated:hover {
+	text-decoration: none;
+	color: unset;
+}
+
+.btn-primary.pencil {
+	background-color: transparent;
+	border: none;
+	border-radius: 50%;
+	color: rgb(69, 69, 69);
+	cursor: pointer;
+}
+
+.btn-primary.pencil:hover {
+	background-color: rgba(193, 193, 193, 0.712);
+}
+
+.modal-dialog {
+	max-width: 600px;
+}
+
+.sub-navbar {
+	position: sticky;
+	top: 64px;
+	background-color: rgba(247, 247, 247, 1);
+	transition: transform 0.5s ease-in-out;
+	border-top: 1px solid gray;
+}
+
+.bannerTop {
+	top: 76px;
+}
+
+.card-transition {
+	transition: opacity 0.8s ease-out, transform 1.2s ease-out, max-height 1.5s ease-out, width 0.5s;
+	opacity: 0;
+	overflow: hidden;
+	transform: translateX(0px);
+	width: 0;
+	max-height: 0;
+	display: inline-block;
+}
+
+.card-visible {
+	transition: opacity 0.8s ease-in, transform 1.8s ease-in, max-height 1.5s ease-in;
+	opacity: 1;
+	overflow: hidden;
+	transform: translateX(0);
+	max-height: 500px;
+	display: inline-block;
+}
+
+.banner-container {
+	height: 250px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.banner-profile {
+	height: 250px;
+}
+
+.btn.nav-link.my-link {
+	border-radius: 0;
+}
+
+.nav-link.my-link:hover {
+	background-color: #ebebeb;
+}
+
+/* DROPDWON LINGUE FOOTER */
+.tab-container {
+	display: flex;
+	gap: 15px;
+}
+
+.tab {
+	cursor: pointer;
+	padding: 10px;
+	color: grey;
+	border-bottom: 3px solid transparent;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.tab:hover {
+	background-color: rgba(128, 128, 128, 0.13);
+}
+
+.tab.active {
+	color: green;
+	border-bottom-color: green;
+}
+
+.langDrop {
+	max-height: 300px;
+	overflow-y: auto;
+	width: 305px;
+	font-size: 12px;
+}
+
+.dropHover:hover {
+	background-color: #0d6efd;
+	color: white;
+}
+
+.btn.show {
+	border: none;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+#dropdown-basic.btn {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.border.dropdown:hover {
+	border: 3px solid black;
+}
+
+.border.dropdown:active {
+	border: 3px solid black;
+}
+
+#mini-footer small {
+	font-size: 12px;
+}
+.col-1of20 {
+	flex: 0 0 auto;
+	width: 5%;
+}
+
+.col-2of20 {
+	flex: 0 0 auto;
+	width: 10%;
+}
+
+.col-3of20 {
+	flex: 0 0 auto;
+	width: 15%;
+}
+
+.col-4of20 {
+	flex: 0 0 auto;
+	width: 20%;
+}
+
+.col-5of20 {
+	flex: 0 0 auto;
+	width: 25%;
+}
+
+.col-6of20 {
+	flex: 0 0 auto;
+	width: 30%;
+}
+
+.col-7of20 {
+	flex: 0 0 auto;
+	width: 35%;
+}
+
+.col-8of20 {
+	flex: 0 0 auto;
+	width: 40%;
+}
+
+.col-9of20 {
+	flex: 0 0 auto;
+	width: 45%;
+}
+
+.col-10of20 {
+	flex: 0 0 auto;
+	width: 50%;
+}
+
+.col-11of20 {
+	flex: 0 0 auto;
+	width: 55%;
+}
+
+.col-12of20 {
+	flex: 0 0 auto;
+	width: 60%;
+}
+
+.col-13of20 {
+	flex: 0 0 auto;
+	width: 65%;
+}
+
+.col-14of20 {
+	flex: 0 0 auto;
+	width: 70%;
+}
+
+.col-15of20 {
+	flex: 0 0 auto;
+	width: 75%;
+}
+
+.col-16of20 {
+	flex: 0 0 auto;
+	width: 80%;
+}
+
+.col-17of20 {
+	flex: 0 0 auto;
+	width: 85%;
+}
+
+.col-18of20 {
+	flex: 0 0 auto;
+	width: 90%;
+}
+
+.col-19of20 {
+	flex: 0 0 auto;
+	width: 95%;
+}
+
+.col-20of20 {
+	flex: 0 0 auto;
+	width: 100%;
+}
+
+@media (max-width: 950px) {
+	.col-4of20 {
+		display: none;
+	}
+}
+
+/* Hide HomeAside on medium screens (<992px) and smaller */
+@media (max-width: 1200px) {
+	.col-5of20 {
+		display: block;
+	}
+	.col-11of20 {
+		width: 80%;
+	}
+}
+
+@media (max-width: 30000px) {
+	.col-5of20 {
+		display: block;
+	}
+}
+
+/* Adjust the layout for very small screens (<=500px) */
+@media (max-width: 900px) {
+	.col-11of20 {
+		width: 100%;
+	}
+	.col-4of20 {
+		display: none;
+	}
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: black;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+}
+
+.carousel-item {
+	margin-block: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	bottom: -25px;
+}
+
+.carousel-control-prev {
+	left: -65px;
+}
+
+.carousel-control-next {
+	right: -65px;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next,
+.carousel:focus-within .carousel-control-prev,
+.carousel:focus-within .carousel-control-next {
+	opacity: 0.75;
+}
+
+.prev {
+	left: -5px;
+}
+
+.modal-index {
+	z-index: 999999;
+}
+.scroll {
+	height: calc(100vh - 120px);
+	overflow-y: scroll;
+}
+
+/* Stili per WebKit (Chrome, Safari, ecc.) */
+::-webkit-scrollbar {
+	width: 8px; /* o qualsiasi larghezza desiderata */
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; /* colore di sfondo della traccia della scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888; /* colore della barra di scorrimento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555; /* colore della barra di scorrimento quando si passa il mouse sopra */
+}
+
+/* Stili per Firefox */
+* {
+	scrollbar-width: thin; /* "auto" o "thin" */
+	scrollbar-color: #888 #f1f1f1; /* colore della barra di scorrimento e colore di sfondo della traccia della scrollbar */
+}
+
+/* Stili per Internet Explorer */
+body {
+	-ms-overflow-style: -ms-autohiding-scrollbar; /* opzioni autohiding per le scrollbar */
+}
+.pagination {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	margin: 0;
+	list-style: none;
+	border-radius: 25rem;
+	text-align: center;
+	color: #484b5a;
+}
+
+.pagination li {
+	padding: 0 3px;
+	flex: 1 1 42px;
+	max-width: 42px;
+	min-width: 27px;
+	float: left;
+	font-size: 1.4rem;
+}
+
+.pagination > .active > span,
+.pagination.li.a:hover {
+	background: 0 0;
+	background-color: #71d9f5;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: inset 2px 2px 2px 0px
+		rgba(
+			255,
+			255,
+			255,
+			inset - 7px 7px 16px 0px rgba(0, 0, 0, 0.1) 5px 5px 5px 0px rgba(0, 0, 0, 0.1) 2px 2px 2px 0px rgba(0, 0, 0, 0.1)
+		);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5), -4px -4px 6px rgba(116, 125, 136, 0.2);
+	outline: none;
+}
+
+.scale:hover {
+	cursor: pointer;
+	transition: transform 0.8s ease-in-out; /* Animazione della durata di 0.5 secondi */
+}
+
+.scaled {
+	transform: scale(1.05);
+	z-index: 1000;
+}
+.defaultDrop {
+	pointer-events: none; /* Disable pointer events, making the item not clickable */
+	cursor: default; /* Set cursor to default to indicate non-clickable */
+	background-color: inherit !important; /* Prevent background color change */
+	color: inherit !important; /* Prevent text color change */
+}
+.defaultDrop:hover {
+	background-color: inherit !important; /* Prevent background color change on hover */
+}
+
+.form-control:focus {
+	border-color: #ebebeb;
+	box-shadow: inset 0 0 0 2px rgba(193, 193, 193, 0.712);
+	background-color: rgba(193, 193, 193, 0.2);
+}
+
+/* Chrome */
+::placeholder {
+	font-weight: 500;
+}
+
+/* Firefox */
+::-moz-placeholder {
+	font-weight: 500;
+}
+
+/* Internet Explorer */
+:-ms-input-placeholder {
+	font-weight: 500;
+}
+
+.hover:hover {
+	background-color: #ebebeb;
+}
+
+.shad:hover {
+	box-shadow: inset 0 0 0 2px rgba(193, 193, 193, 0.712);
+}
+
+.input:active {
+	color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(140, 140, 140, 0.2);
+	box-shadow: inset rgba(0, 0, 0, 0.9);
+}
+.input:hover,
+.input:focus {
+	border: 1px soli rgba(0, 0, 0, 0.9);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.dropstart .dropdown-menu[data-bs-popper] {
+	top: 40px;
+	right: -20px;
+}
